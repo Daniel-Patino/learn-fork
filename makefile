@@ -1,15 +1,9 @@
 # -*- MakeFile -*-
 
-all: Assign_6 clean run
+all: Assign_6 run
 
-Assign_6: Assign_6.o
-	gcc main.o -o prog
-	
-Assign_6.o: main.o
-	gcc -c main.c
+Assign_6:
+	gcc main.c -o runn
 	
 run:
-	./prog
-	
-clean:
-	rm -f *.o
+	.\runn.exe
